@@ -1,0 +1,171 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\renewcommand*{\cvdoubleitem}[5][.25em]{%
+	\cvitem[#1]{#2}{%
+		\begin{minipage}[t]{\doubleitemmaincolumnwidth+0.25\hintscolumnwidth}#3\end{minipage}%
+		\hspace*{\separatorcolumnwidth}%
+		\begin{minipage}[t]{0.5\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
+		\hspace*{\separatorcolumnwidth}%
+		\begin{minipage}[t]{\doubleitemmaincolumnwidth+0.25\hintscolumnwidth}#5\end{minipage}}}
+\usepackage{lastpage}
+\cfoot{\addressfont\itshape\textcolor{gray}{\thepage\ / \pageref{LastPage}}}
+
+% personal data
+\name{Raphael Ballet}{}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{Rua Emilio Mallet, 367}{03320-000 São Paulo}{Brasil}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+55~(11)~9~9594-8182}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+55~(11)~2295-4956}                    % optional, remove / comment the line if not wanted
+\email{raphaelballet@hotmail.com}
+%\extrainfo{CV Lattes: http://lattes.cnpq.br/3489385840214713}                               %                       % optional, remove / comment the line if not wanted
+
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+    % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Formação}
+\cventry{2/2015--12/2016}{Mestrado (em andamento) em Sistemas Aeroespaciais e Mecatrônica}{\newline{} Instituto Tecnológico de Aeronáutica - ITA}{}{\textit{São José dos Campos - SP}}{Tese: A Visual-Inertial Navigation Algorithm for Micro Aerial Vehicles Using the Cubature Kalman Filter. \newline{}}
+
+\cventry{2010--2014}{Engenharia de Controle e Automação}{\newline{} Instituto Mauá de Tecnologia - IMT}{}{\textit{São Caetano do Sul - SP}}{}  % arguments 3 to 6 can be left empty
+
+\section{Experiência}
+
+\cventry{2016}{Pesquisador}{Parceria ITA/FAPG - Elio Tecnologia LTDA}{}{}{Tema:  Modelagem Dinâmica, Controle, Identificação e Otimização Estrutural de um VANT Híbrido do tipo Hexacóptero-Balão. Participação: Bolsista FAPG (3/2016-11/2016).\newline{}}
+
+\cventry{2015}{Pesquisador}{Instituto Mauá de Tecnologia}{}{}{Participação no Projeto CITAR – Circuitos Integrados Tolerantes À Radiação, em cooperação entre o CTI Renato Archer e o Instituto Mauá de Tecnologia. Participação: Bolsista CNPq modalidade EXP-C. Objetivo: Desenvolvimento de um sistema de processamento digital redundante de baixo custo para aplicações em micro-satélites do tipo Cubesat. \newline{} }
+
+\cventry{2012 - 2014}{Iniciação Científica}{Instituto Mauá de Tecnologia}{}{}{Temas: (2014) Estudo de Estratégias de Controle de um Veículo Quadrirrotor Autônomo; (2013) Movimentação Autônoma de robô Humanoide com Câmera Embarcada; (2012) Integrando Tecnologias em Sistema de Controle de Movimentação de Robô Humanoide com Câmera Embarcada.  \newline{} }
+
+%\cventry{2013}{Iniciação Científica}{Instituto Mauá de Tecnologia}{}{}{Tema: Movimentação Autônoma de robô Humanoide com Câmera Embarcada
+%O projeto teve como objetivo criar algoritmos de posicionamento e movimentação
+%autônoma para o uso em robôs humanoides através de sensores inerciais e
+%câmera embarcada.\newline{}}
+%
+%\cventry{2012}{Iniciação Científica}{Instituto Mauá de Tecnologia}{}{}{Tema: Integrando Tecnologias em Sistema de Controle de Movimentação de
+%Robô Humanoide com Câmera Embarcadaa
+%O projeto teve como objetivo realizar o estudo e integração de sensores,
+%microcontroladores e câmera embarcada para o uso em robôs humanoides para
+%aplicação em movimentação autônoma.\newline{}}
+
+\section{Cursos}
+
+\cventry{2015}{Curso de FreeRTOS}{}{}{}{Curso ministrado por Sergio Prado (24 horas). \newline{} }
+
+\cventry{2015}{Curso de Linux Embarcado}{}{}{}{Curso ministrado por Sergio Prado (24 horas). \newline{} }
+
+\cventry{2013}{Intercâmbio}{Toronto, Canadá}{}{}{Curso de Inglês acadêmico (6 semanas). \newline{} }
+
+\cventry{2011}{Curso de Excel Avançado}{Clarify}{}{}{(32 horas) \newline{} }
+
+\cventry{2008}{Intercâmbio}{Londres, Inglaterra}{}{}{Curso de Inglês avançado (4 semanas) \newline{} }
+
+\cventry{2007}{Intercâmbio}{San Diego, EUA}{}{}{Curso de Inglês avançado (4 semanas) \newline{} }
+
+
+\section{Língua Estrangeira}
+\cvitemwithcomment{Inglês}{Avançado/Fluente}{}
+\cvitemwithcomment{Alemão}{Intermediário}{}
+\cvitemwithcomment{Espanhol}{Intermediário}{}
+\cvitemwithcomment{Francês}{Básico}{}
+
+\section{Conhecimento de Software e Programação}
+\cvlistdoubleitem{Matlab/Simulink}{LabView}
+\cvlistdoubleitem{CAD 3D - Solidworks}{Microsoft Office}
+\cvlistdoubleitem{C/C++}{Python}
+\cvlistdoubleitem{Tex}{SQL}
+%\cvdoubleitem{}{}{}{}
+%\cvdoubleitem{}{}{}{}
+%\cvdoubleitem{}{}{}{}
+
+\section{Congressos, Seminários e Simpósios}
+\cventry{2014}{XX Congresso Brasileiro de Automática (CBA)}{UFMG - Belo Horizonte, MG}{}{}{Tema: Uma Plataforma Didática para Simulação e Controle Embarcado de Veículos Quadrirrotores. \newline{}}
+
+\cventry{2014}{VI Seminário Mauá de Iniciação Científica}{Instituto Mauá de Tecnologia}{}{}{Tema: Estudo de Estratégias de Controle de um Veículo Quadrirrotor. \newline{}}
+
+\cventry{2013}{XIII CONIC-SEMESP}{Faculdade Anhanguera, Campinas, SP}{}{}{Tema: Movimentação Autônoma de robô Humanoide com Câmera Embarcada. \newline{}}
+
+\cventry{2013}{VI Simpósio da UFABC}{UFABC, Santo André, SP}{}{}{Tema: Movimentação Autônoma de robô Humanoide com Câmera Embarcada. \newline{}}
+
+\cventry{2012}{XII CONIC-SEMESP}{Faculdade São Judas, São Paulo, SP}{}{}{Tema: Integrando tecnologias em sistema de controle de movimentação de robô
+humanoide com câmera embarcada. \newline{}}
+
+\section{Extra}
+
+\cvitem{Coordenador de equipe}{Coordenador da área de navegação inercial/visual de VANTs tipo Multicópteros do laboratório de robótica aérea (LRA) do ITA. \newline{}}
+
+\cvitem{Trabalho voluntário}{Trabalho por mais de 15 anos em campanhas de doação de
+presentes de natal para creches, hospitais psiquiátricos e casas de repouso com a empresa
+CRE-Automação Comercial.}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+ % \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+ % \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
